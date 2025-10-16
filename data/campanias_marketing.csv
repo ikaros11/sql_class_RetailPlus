@@ -1,0 +1,13 @@
+id,nombre,fecha_inicio,fecha_fin,objetivo,canal,presupuesto
+1,Campaña 01,2023-07-15,2023-07-27,Brand,Afiliados,3819.52
+2,Campaña 02,2024-03-13,2024-04-06,Promoción,Radio,11811.64
+3,Campaña 03,2024-04-09,2024-04-26,Promoción,TV,15932.3
+4,Campaña 04,2024-08-20,2024-09-05,VueltaCole,SEM,17572.12
+5,Campaña 05,2023-10-02,2023-10-28,Promoción,TV,17806.91
+6,Campaña 06,2023-08-28,2023-09-17,BlackFriday,TV,2270.15
+7,Campaña 07,2023-11-29,2023-12-30,Brand,Afiliados,12578.92
+8,Campaña 08,2024-04-18,2024-05-25,Promoción,Email,9354.65
+9,Campaña 09,2023-08-26,2023-10-02,Liquidación,Radio,17888.34
+10,Campaña 10,2023-10-03,2023-11-11,VueltaCole,Radio,7838.51
+11,Campaña 11,2023-03-10,2023-04-18,Brand,Afiliados,8865.8
+12,Campaña 12,2024-03-24,2024-04-07,Promoción,Radio,8623.61

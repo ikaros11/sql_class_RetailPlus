@@ -145,6 +145,8 @@ Las soluciones están en `scripts/solutions/02_clase2_solution.sql`.
 
 Nivel 1 (básico)
 Luego actualizar algunas filas con `UPDATE ventas SET sucursal_id = 2 WHERE id <= 5`.
+
+Nivel 2 (intermedio)
 4. Consultar la sucursal con mayor ingreso en el último mes.
 5. Top 5 vendedores por ventas totales.
 

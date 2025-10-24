@@ -77,7 +77,7 @@ INSERT INTO formas_pago (descripcion) VALUES ('Efectivo'),('Tarjeta');
 ```sql
 -- Ejemplo simple: recrear tabla con campos nuevos (en entornos de práctica)
 CREATE TABLE ventas_new (
-   id INTEGER PRIMARY KEY,
+   venta_id INTEGER PRIMARY KEY,
    fecha DATE,
    cliente_id INTEGER,
    producto_id INTEGER,
@@ -85,8 +85,15 @@ CREATE TABLE ventas_new (
    total REAL,
    sucursal_id INTEGER,
    empleado_id INTEGER,
-   forma_pago_id INTEGER
+   forma_pago_id INTEGER, 
+   FOREIGN KEY (cliente_id) REFERENCES clientes(cliente_id),
+   FOREIGN KEY (producto_id) REFERENCES productos(producto_id),
+   FOREIGN KEY (sucursal_id) REFERENCES sucursales(sucursal_id),
+   FOREIGN KEY (empleado_id) REFERENCES empleados(empleado_id),
+   FOREIGN KEY (forma_pago_id) REFERENCES formas_pago(forma_pago_id)
 );
+
+
 INSERT INTO ventas_new (id, fecha, cliente_id, producto_id, cantidad, total)
    SELECT id, fecha, cliente_id, producto_id, cantidad, total FROM ventas;
 DROP TABLE ventas;

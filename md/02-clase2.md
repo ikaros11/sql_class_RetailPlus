@@ -94,7 +94,7 @@ CREATE TABLE ventas_new (
 );
 
 
-INSERT INTO ventas_new (id, fecha, cliente_id, producto_id, cantidad, total)
+INSERT INTO ventas_new (venta_id, fecha, cliente_id, producto_id, cantidad, total, sucursal_id,empleado_id,forma_pago_id)
    SELECT venta_id, fecha, cliente_id, producto_id, cantidad, total, 1 sucursal_id, 1 empleado_id, 1 forma_pago_id FROM ventas;
 DROP TABLE ventas;
 ALTER TABLE ventas_new RENAME TO ventas;

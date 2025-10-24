@@ -144,11 +144,7 @@ ORDER BY cantidad_devoluciones DESC;
 Las soluciones están en `scripts/solutions/02_clase2_solution.sql`.
 
 Nivel 1 (básico)
-1. Crear las tablas `sucursales`, `empleados` y `formas_pago` e insertar datos.
-2. Extender `ventas` con las columnas operativas y verificar integridad.
-
-Nivel 2 (intermedio)
-3. **Ejercicio ALTER TABLE**: Usar `ALTER TABLE ventas ADD COLUMN sucursal_id INTEGER` para añadir la columna de sucursal. Luego actualizar algunas filas con `UPDATE ventas SET sucursal_id = 1 WHERE id <= 5`.
+Luego actualizar algunas filas con `UPDATE ventas SET sucursal_id = 2 WHERE id <= 5`.
 4. Consultar la sucursal con mayor ingreso en el último mes.
 5. Top 5 vendedores por ventas totales.
 

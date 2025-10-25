@@ -49,7 +49,7 @@ Para medir el efecto de una campaña necesitas comparar métricas antes y despu�
   UPDATE inventario
   SET fecha = DATE(fecha, '+1 year')  
   WHERE fecha IS NOT NULL AND fecha <> '';
-  ```
+  ````
   
 </details>
 

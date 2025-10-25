@@ -22,7 +22,7 @@ En esta sesión repasaremos conceptos analíticos y temporales que facilitan la 
 Para medir el efecto de una campaña necesitas comparar métricas antes y después del inicio de la campaña. La técnica más simple es una comparación de ventanas temporales (p. ej. 30 días antes vs 30 días después). También conviene normalizar por volumen (tasas) para evitar sesgos.
 
 ## Plan de trabajo
-1. Crear o revisar tablas: `campanas_marketing(campana_id, nombre, fecha_inicio, fecha_fin)`, `campanas_productos(campana_id, producto_id)`, `devoluciones`, `inventario`.
+1. Crear o revisar tablas: `campanas_marketing(campana_id, nombre, fecha_inicio, fecha_fin)`, `campanas_productos(campana_id, producto_id)`, `devoluciones`(devolucion_id,venta_id,producto_id,cantidad,fecha,motivo), `inventario`(sucursal_id,producto_id,fecha,stock), `envios`(envio_id,venta_id,fecha_envio,fecha_entrega,transportista,estado).
 2. Calcular ventas de productos en ventanas temporales y comparar.
 3. Calcular tasa de devoluciones por producto y por campaña.
 

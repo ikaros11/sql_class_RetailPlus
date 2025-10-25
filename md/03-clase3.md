@@ -28,29 +28,30 @@ Para medir el efecto de una campaña necesitas comparar métricas antes y despu�
 
 <details>
 <summary>Solución update (desplegar)</summary>
-  ```sql
-  UPDATE ventas
-  SET fecha = DATE(fecha, '+1 year')
-  WHERE fecha IS NOT NULL AND fecha <> '';
-  
-  UPDATE devoluciones
-  SET fecha = DATE(fecha, '+1 year')
-  WHERE fecha IS NOT NULL AND fecha <> '';
-  
-  UPDATE envios
-  SET fecha_envio = DATE(fecha_envio, '+1 year')  
-  WHERE fecha_envio IS NOT NULL AND fecha_envio <> '';
-  
-  UPDATE envios
-  SET fecha_entrega = DATE(fecha_entrega, '+1 year')  
-  WHERE fecha_envio IS NOT NULL AND fecha_envio <> '';
-  
-  
-  UPDATE inventario
-  SET fecha = DATE(fecha, '+1 year')  
-  WHERE fecha IS NOT NULL AND fecha <> '';
-  ````
-  
+
+```sql
+UPDATE ventas
+SET fecha = DATE(fecha, '+1 year')
+WHERE fecha IS NOT NULL AND fecha <> '';
+
+UPDATE devoluciones
+SET fecha = DATE(fecha, '+1 year')
+WHERE fecha IS NOT NULL AND fecha <> '';
+
+UPDATE envios
+SET fecha_envio = DATE(fecha_envio, '+1 year')  
+WHERE fecha_envio IS NOT NULL AND fecha_envio <> '';
+
+UPDATE envios
+SET fecha_entrega = DATE(fecha_entrega, '+1 year')  
+WHERE fecha_envio IS NOT NULL AND fecha_envio <> '';
+
+
+UPDATE inventario
+SET fecha = DATE(fecha, '+1 year')  
+WHERE fecha IS NOT NULL AND fecha <> '';
+```
+
 </details>
 
 ## Ejercicios guiados

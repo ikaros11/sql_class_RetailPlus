@@ -151,6 +151,6 @@ Nivel 2 (intermedio)
 5. Top 5 vendedores por ventas totales.
 
 Nivel 3 (avanzado)
-6. Analizar la proporción de devoluciones por forma de pago y proponer una hipótesis de causa.
+6. Analizar la proporción de Ventas por forma de pago y proponer una hipótesis de causa.
 
 Soluciones: `scripts/solutions/02_clase2_solution.sql`

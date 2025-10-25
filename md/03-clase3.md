@@ -108,8 +108,10 @@ GROUP BY pc.producto_id;
 Soluciones: `scripts/solutions/03_clase3_solution.sql`
 
 Nivel 1 (básico)
-1. Ventas totales de productos de la campaña en 30 días posteriores al inicio.
-2. Unidades vendidas por producto en la misma ventana.
+
+1. La tabla ventas tiene un ERROR!, tenemos que agregar la columna total basado en la cantidad*precio*(total-descuento) para general la columna en ventas,
+2. Ventas totales de productos de la campaña en 30 días posteriores al inicio.
+3. Unidades vendidas por producto en la misma ventana.
 
 Nivel 2 (intermedio)
 3. Tasa de devoluciones por producto en la ventana seleccionada.
